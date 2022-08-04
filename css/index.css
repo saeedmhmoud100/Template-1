@@ -11,16 +11,24 @@
 
 body{
     font-family: 'Work Sans', sans-serif;
+    height: 3000px;
 }
 
 
 /* Start Header  */
+
+.header{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .header .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 15px;
+    margin: auto;
 }
 
 .container .logo{
@@ -131,8 +139,56 @@ body{
 	font-size:19px;
     line-height: 1.8;
 }
-
 /* End Landing Section */
+
+/* Start Features */
+
+section.features{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #ccc;
+}
+
+.features .features-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    gap: 0 40px;
+    width: 86%;
+    margin: auto;
+}
+
+@media (max-width:315px) {
+    .features .features-container{
+        grid-template-columns: 1fr;
+    }
+}
+.features .features-container .feat h2{
+    font-weight: 800;
+    color: #2c4755;
+}
+
+.features .features-container .feat p{
+    color: #575757;
+}
+/* 
+@media (max-width:795px) {
+    .features .features-container .feat h2{font-size: 1.5rem;}
+    
+} */
+
+
+.features .features-container .feat{
+    padding: 0 10px;
+    text-align: center;
+}
+
+.features .features-container .feat i{
+    color: var(--main-color);
+    opacity: .9;
+}
+
+/* End Features */
+
 
 /* farmework */
 .container{
@@ -143,6 +199,7 @@ body{
     margin-left: auto;
     /* width: 80vw; */
 }
+
 
 
 
