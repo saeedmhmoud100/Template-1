@@ -13,12 +13,14 @@ body{
     font-family: 'Work Sans', sans-serif;
 }
 
+
+/* Start Header  */
 .header .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 .container .logo{
@@ -60,7 +62,7 @@ body{
     background-color: #eee;
     position: absolute;
     right: 0;
-    top: 50px;
+    top: 36px;
     width: 178px;
     display: none;
     padding-left: 3px;
@@ -100,12 +102,41 @@ body{
 .container .links #checkbox-nav:checked + ul{
     display: initial;
 }
+/* End Header  */
 
+/* Start Landing Section */
 
+.landing{
+    display: flex;
+    background: url('../images/header.jpg') no-repeat;
+    background-size: 100% 100%;
+    height: calc(100vh - 55px);
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.landing .intro-text{
+    text-align: center;
+    width: 380px;
+}
+
+.landing .intro-text > h1{
+    font-size: 2.8rem;
+    color: var(--main-color);
+}
+
+.landing .intro-text > p{
+    color:#545B6B;
+	font-size:19px;
+    line-height: 1.8;
+}
+
+/* End Landing Section */
 
 /* farmework */
 .container{
-    width: 80vh;
+    /* width: 80vh; */
     padding-left: 15px;
     padding-right: 15px;
     margin-right: auto;
