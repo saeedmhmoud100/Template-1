@@ -327,12 +327,24 @@ section.features{
     width: 100%;
     margin: 30px 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns: repeat(3,1fr);
     gap: 14px;
     justify-items: center;
     align-items: center;
 
 }
+
+@media (max-width:768px) {
+#portfolio .container .cards{
+    grid-template-columns: repeat(2,1fr);
+}
+}
+
+@media (max-width:578px) {
+    #portfolio .container .cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+    }
 
 #portfolio .container .cards .card{
     background-color: #fff;
@@ -602,13 +614,13 @@ footer span{
 @media (max-width:360px) {
 
     .specially-text{
-        font-size: 60px;
+        font-size: 53px;
         margin-top: -39px;
     }
 
     .specially-text +p {
         font-size: 10px;
-        margin-top:-23px ;
+        margin-top:-20px ;
     }
 }
 
