@@ -103,11 +103,16 @@ body{
 
 .container .links ul li:hover a{padding-left: 15px;}
 
+
 .container .links #checkbox-nav{
     display: none;
 }
 
 .container .links #checkbox-nav:checked + ul{
+    display: initial;
+}
+
+.container .links:hover ul{
     display: initial;
 }
 /* End Header  */
@@ -267,10 +272,10 @@ section.features{
 
 .services-box > .container .col:last-of-type .features-img-slide{
     width: 100px;
-    height: 120%;
+    height: 105%;
     background-color: var(--secondary-color);
     position: absolute;
-    top: -10%;
+    top: -2.5%;
     right: 55px;
     z-index: -1;
 }
@@ -282,7 +287,7 @@ section.features{
 }
 
 
-@media (max-width:629px) {
+@media (max-width:642px) {
 
     .services-box .container{
         justify-items: center;
@@ -298,6 +303,70 @@ section.features{
 }
 
 /* End Services  */
+
+/* Start portfolio */
+
+#portfolio{
+    margin-top: 85px;
+    background-color: #eee;
+    padding-top: 50px;
+
+}
+
+#portfolio .specially-head h2.specially-text {
+    color: #d5d5d5;
+    margin-top: 30px;
+}
+
+#portfolio .container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;    
+}
+
+#portfolio .container .cards{
+    width: 100%;
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 14px;
+    justify-items: center;
+    align-items: center;
+
+}
+
+#portfolio .container .cards .card{
+    background-color: #fff;
+    max-width: 400px;
+}
+
+#portfolio .container .cards .card img{
+    width: 100%;
+}
+
+#portfolio .container .cards .card > *:not(img){
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#portfolio .container .button input{
+    padding: 15px 20px;
+    margin: 10px 0 40px 0;
+    cursor: pointer;
+    background-color: #fff;
+    transition: color,background .3s;
+}
+
+#portfolio .container .button input:hover{
+    background-color: #000;
+    color: white;
+}
+/* End Portfolio */
+
+
+
+
+
 
 /* farmework */
 .container{
