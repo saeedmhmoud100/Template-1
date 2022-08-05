@@ -11,7 +11,7 @@
 
 body{
     font-family: 'Work Sans', sans-serif;
-    height: 3000px;
+    height: 5000px;
 }
 
 
@@ -364,7 +364,93 @@ section.features{
 /* End Portfolio */
 
 
- 
+
+
+/* Start About */
+
+#about{
+    margin-top: 55px;
+
+}
+
+#about .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+}
+
+#about .container .image{
+    position: relative;
+    padding-left: 99px;
+}
+
+#about .container .image img{
+    height: 300px;
+    width: 250px;
+    box-shadow: 0px 1px 9px 0 grey;
+}
+
+#about .container .image img + .after{
+    width: 153px;
+    height: 200px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: -34px;
+    left: 300px;
+    z-index: -1;
+}
+
+#about .container .image .before{
+    width: 77px;
+    height: 150px;
+    background-color: #ffffff;
+    top: -34px;
+    left: 377px;
+    position: absolute;
+
+}
+
+
+#about .container .text{
+    padding: 0 10px;
+}
+
+#about .container .text h3{
+    color: var(--secondary-color);
+}
+
+#about .container .text span{
+    display: block;
+    height: 2px;
+    width: 60%;
+    background-color: var(--main-color);
+    margin-top: 40px;
+    margin-bottom: 23px;
+}
+#about .container .text p{
+    color: rgb(87, 87, 87)
+}
+
+
+
+@media (max-width:1000px) {
+
+    #about .container{
+        grid-template-columns: 1fr;
+        text-align: center ;
+    }
+
+    #about .container .image{
+        display: none;
+    }
+
+    #about .container .text span{
+        margin: auto;
+    }
+}
+
+/* End About */
+
 
 
 
