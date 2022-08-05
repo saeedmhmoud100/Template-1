@@ -452,7 +452,92 @@ section.features{
 /* End About */
 
 
+/* Start Contact  */
 
+#contact{
+    margin-top: 30px;
+    padding-top: 50px;
+    background-color: #fafafa;
+}
+
+#contact .container{
+    padding: 82px;
+}
+
+#contact .container .information {
+    padding-left: 125px;
+}
+#contact .container h2{
+    font-size: 2rem;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+#contact .container h3{
+    font-size: 1.5rem;
+    color: var(--main-color);
+    text-decoration: line-through ;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+#contact .container .social-links h6{
+    display: inline-block;
+    font-weight: 300;
+    margin-left: 60px;
+}
+
+#contact .container .social-links i{
+    font-size: 10px;
+}
+
+
+@media (max-width:1000px) {
+
+    #contact .container .information {
+        padding-left: 0;
+    }
+}
+
+@media (max-width:600px) {
+
+
+#contact .container h2{
+    font-size: 1.5rem;
+    margin-left: -20px;
+}
+
+#contact .container h3{
+    font-size: 1.2rem;
+    margin-left: 12px;
+}
+
+#contact .container .social-links h6{
+    margin-left: 50px;
+}
+}
+
+
+@media (max-width:436px) {
+#contact .container h2{
+    font-size: 1rem;
+    margin-left: -30px;
+}
+
+#contact .container h3{
+    font-size: .8rem;
+    margin-left: -7px;
+}
+
+#contact .container .social-links h6{
+    margin-left: 0;
+}
+
+#contact .container .social-links i{
+    font-size: 7px;
+}
+    }
+/* End Contact */
 
 
 /* farmework */
