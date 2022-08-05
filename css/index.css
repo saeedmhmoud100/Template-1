@@ -146,13 +146,14 @@ body{
 section.features{
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: #ccc;
+    /* background-color: #ccc; */
 }
 
 .features .features-container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
-    gap: 0 40px;
+    gap: 30px 40px;
+    justify-items: center;
     width: 86%;
     margin: auto;
 }
@@ -162,7 +163,26 @@ section.features{
         grid-template-columns: 1fr;
     }
 }
-.features .features-container .feat h2{
+
+.features .features-container > div{
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    transition: box-shadow .3s;
+
+}
+
+.features .features-container > div:hover{
+    box-shadow: 0px 4px 18px 0px grey;
+}
+
+.features .features-container .feat{
+    max-width: 343px;
+    margin: auto;
+}
+
+
+.features .features-container .feat h3{
     font-weight: 800;
     color: #2c4755;
 }
