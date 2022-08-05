@@ -11,7 +11,6 @@
 
 body{
     font-family: 'Work Sans', sans-serif;
-    height: 5000px;
 }
 
 
@@ -538,6 +537,21 @@ section.features{
 }
     }
 /* End Contact */
+
+/* start Footer  */
+footer{
+    width: 100%;
+    padding: 10px 10px;
+    background-color: var(--secondary-color);
+    color:#eee;
+    text-align: center;
+}
+footer span{
+    color: var(--main-color);
+}
+/* End Footer  */
+
+
 
 
 /* farmework */
