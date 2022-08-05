@@ -548,6 +548,30 @@ section.features{
     font-size: 7px;
 }
     }
+
+
+
+    @media (max-width:360px){
+        #contact .container h2{
+            font-size: .7rem;
+            margin-left: -50px;
+        }
+        
+        #contact .container h3{
+            font-size: .6rem;
+            margin-left: -36px;
+        }
+        
+        #contact .container .social-links h6{
+            margin-left: -57px;
+            font-size: 8px;
+            margin-bottom: 1px;
+        }
+        
+        #contact .container .social-links i{
+            font-size: 7px;
+        }
+    }
 /* End Contact */
 
 /* start Footer  */
