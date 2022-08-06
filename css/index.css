@@ -2,12 +2,13 @@
 :root{
     --main-color:#10cab7;
     --secondary-color:#2c4855;
+    scroll-behavior: smooth;
 }
-
+/*
 :root{
     scroll-behavior: smooth;
 }
-
+*/
 
 *{
     box-sizing: border-box;
