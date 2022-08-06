@@ -4,6 +4,10 @@
     --secondary-color:#2c4855;
 }
 
+:root{
+    scroll-behavior: smooth;
+}
+
 
 *{
     box-sizing: border-box;
